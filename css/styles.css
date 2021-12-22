@@ -3,7 +3,7 @@ body {
     margin: 0;
     font: 1.125rem;
     font-weight: 300;
-    margin-top: 0;
+    line-height: 1.6;
 }
 
 img {
@@ -28,6 +28,7 @@ h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
 }
 
 h1 {
@@ -58,10 +59,11 @@ strong {
     font-weight: 700;
     color: #1792d2;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .article-title {
-    font-size: 1.5rm;
+    font-size: 1.5rem;
 }
 
 .article-read-more,
@@ -71,6 +73,7 @@ strong {
 
 .article-read-more {
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: #1792d2;
     text-decoration: none;
     font-weight: 700;
@@ -89,11 +92,14 @@ strong {
 .widget-title,
 .widget-recent-post-title {
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .widget-recent-post-title {
@@ -131,6 +137,11 @@ footer {
 }
 
 @media (min-width: 765px) {
+
+    header {
+        text-align: left;
+    }
+
     .container-flex {
         flex-direction: row;
 
@@ -166,6 +177,8 @@ nav a {
     font-weight: 700;
     color: #707070;
     padding: .25em 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav a:hover,
@@ -234,17 +247,15 @@ nav a:focus {
 
     .article-image {
         order: -2;
+        min-height: 250px;
+        object-fit: cover;
+        /* object-position: left; */
     }
 
     .article-info {
         order: -1;
     }
 
-    .article-image {
-        width: 100%;
-        min-height: 250px;
-        object-fit: cover;
-    }
 }
 
 /* widgets */
